@@ -2,13 +2,50 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
-import { twMerge } from "tailwind-merge";
+import Script from "next/script";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: process.env.NEXT_PUBLIC_SITE_TITLE,
+  description: process.env.NEXT_PUBLIC_SITE_DESCRIPTION,
+  keywords: process.env.NEXT_PUBLIC_SITE_KEYWORDS,
+  openGraph: {
+    title: process.env.NEXT_PUBLIC_SITE_TITLE,
+    description: process.env.NEXT_PUBLIC_SITE_DESCRIPTION,
+    url: process.env.NEXT_PUBLIC_SITE_URL,
+    siteName: process.env.NEXT_PUBLIC_SITE_NAME,
+    images: [
+      {
+        url: process.env.NEXT_PUBLIC_OG_IMAGE!,
+        width: 1200,
+        height: 630,
+        alt: `${process.env.NEXT_PUBLIC_SITE_NAME} AI Chat Resume Builder`,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: process.env.NEXT_PUBLIC_SITE_TITLE,
+    description: process.env.NEXT_PUBLIC_SITE_DESCRIPTION,
+    images: [process.env.NEXT_PUBLIC_TWITTER_IMAGE!],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION,
+  },
 };
 
 export default function RootLayout({
@@ -18,6 +55,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+          `}
+      </Script>
       <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
       </body>
