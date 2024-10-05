@@ -34,7 +34,7 @@ export const Hero = () => {
       <div className="container">
         <div className="md:flex items-center">
           <div className="md:w-[478px]">
-            <div className="tag">Version 2.0 is here</div>
+            <div className="tag">Beta version is here</div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tigher bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text mt-6">
               Pathway to productivity
             </h1>
@@ -43,11 +43,15 @@ export const Hero = () => {
               your progress, motivate your efforts, and celebrate your success.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              {/* <button className="btn btn-primary">Get for free</button>
+              <button className="btn btn-primary">
+                <a href="https://www.waitforit.me/signup/0706e815">
+                  Get free Demo
+                </a>
+              </button>
               <button className="btn btn-text gap-1">
-                <span>Learn more</span>
+                <a href="#pro">Learn more</a>
                 <ArrowIcon className="h-5 w-5" />
-              </button> */}
+              </button>
             </div>
           </div>
 
