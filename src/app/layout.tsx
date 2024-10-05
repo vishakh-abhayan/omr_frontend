@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import clsx from "clsx";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -69,6 +70,7 @@ export default function RootLayout({
       </Script>
       <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
