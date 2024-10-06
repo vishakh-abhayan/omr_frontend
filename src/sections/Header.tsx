@@ -60,9 +60,11 @@ export const Header = () => {
               <a href="#">Customers</a>
               <a href="#">Updates</a>
               <a href="#">Help</a>
-              <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
-                join waitlist
-              </button>
+              <a href="https://www.waitforit.me/signup/c5fdedbb">
+                <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
+                  join waitlist
+                </button>
+              </a>
             </nav>
           </div>
         </div>
