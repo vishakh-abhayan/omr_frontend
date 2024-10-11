@@ -39,6 +39,10 @@ export const ProductShowcase = () => {
             className="mt-10"
             placeholder="blur"
             blurDataURL="data:..."
+            width={2505}
+            height={1566}
+            quality={75}
+            priority={false}
             loading="lazy"
           />
         </div>

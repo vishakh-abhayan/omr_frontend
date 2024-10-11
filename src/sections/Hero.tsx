@@ -40,6 +40,7 @@ export const Hero = () => {
               blurDataURL="data:..."
               placeholder="blur"
               priority
+              quality={75}
             />
           </div>
         </div>
