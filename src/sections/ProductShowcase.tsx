@@ -1,10 +1,8 @@
 "use client";
 
-import productImage from "@/assets/prod_img.png";
-import pyramidImage from "@/assets/pyramid.png";
-import tubeImage from "@/assets/tube.png";
+import productImage from "@/assets/ProductImage.webp";
 import Image from "next/image";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 export const ProductShowcase = () => {

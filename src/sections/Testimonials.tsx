@@ -10,7 +10,6 @@ import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -78,12 +77,12 @@ const thirdColumn = testimonials.slice(6, 9);
 const TestimonialsColumn = (props: {
   className?: string;
   testimonials: typeof testimonials;
-  duration?: number
+  duration?: number;
 }) => (
   <div className={props.className}>
     <motion.div
-      animate={{ 
-        translateY: "-50%"
+      animate={{
+        translateY: "-50%",
       }}
       transition={{
         duration: props.duration || 10,

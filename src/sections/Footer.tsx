@@ -1,4 +1,4 @@
-import logo from "@/assets/logosaas.png";
+import logo from "@/assets/SaaSLogo.webp";
 import SocialX from "@/assets/social-x.svg";
 import SocialInsta from "@/assets/social-insta.svg";
 import SocialLinkedIn from "@/assets/social-linkedin.svg";
@@ -29,8 +29,15 @@ export const Footer = () => {
           <SocialPin />
           <SocialYoutube />
         </div>
-        <p className="mt-6">&copy; 2024 Your Company, Inc. All rights reserved.
-          <br /><Link className="hover:text-white transition-all" href="https://github.com/MiladJoodi/Light-Saas-Landing-Page">Make with ❤️ by Joodi</Link>
+        <p className="mt-6">
+          &copy; 2024 Your Company, Inc. All rights reserved.
+          <br />
+          <Link
+            className="hover:text-white transition-all"
+            href="https://github.com/MiladJoodi/Light-Saas-Landing-Page"
+          >
+            Make with ❤️ by Joodi
+          </Link>
         </p>
       </div>
     </footer>

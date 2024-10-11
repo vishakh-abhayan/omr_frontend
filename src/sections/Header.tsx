@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import ArrowRight from "@/assets/arrow-right.svg";
-import Logo from "@/assets/logosaas.png";
+import Logo from "@/assets/SaaSLogo.webp";
 import MenuIcon from "@/assets/menu.svg";
 import Image from "next/image";
 
