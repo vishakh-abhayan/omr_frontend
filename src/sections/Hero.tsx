@@ -1,7 +1,7 @@
 "use client";
 
 import ArrowIcon from "@/assets/arrow-right.svg";
-import cogImage from "@/assets/Cog.webp";
+import cogImage from "@/assets/cog.webp";
 
 import {
   motion,
