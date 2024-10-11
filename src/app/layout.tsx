@@ -4,6 +4,8 @@ import "./globals.css";
 import clsx from "clsx";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -56,24 +58,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
-        strategy="lazyOnload"
-      />
-      <Script id="google-analytics" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
-            page_path: window.location.pathname,
-          });
-        `}
-      </Script>
+      <GoogleTagManager gtmId="G-1YKVVQRTQ8" />
       <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
         <Analytics />
       </body>
+      <GoogleAnalytics gaId="G-1YKVVQRTQ8" />
     </html>
   );
 }
