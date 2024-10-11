@@ -33,7 +33,14 @@ export const ProductShowcase = () => {
           </p>
         </div>
         <div className="relative">
-          <Image src={productImage} alt="product Image" className="mt-10" />
+          <Image
+            src={productImage}
+            alt="product Image"
+            className="mt-10"
+            placeholder="blur"
+            blurDataURL="data:..."
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
