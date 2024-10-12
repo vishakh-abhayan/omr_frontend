@@ -1,8 +1,8 @@
 "use client";
 
-import ArrowRight from "@/assets/arrow-right.svg";
-import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { useScroll, useTransform } from "framer-motion";
+import ArrowRight from "@/assets/arrow-right.svg";
 
 export const CallToAction = () => {
   const sectionRef = useRef(null);
@@ -20,18 +20,18 @@ export const CallToAction = () => {
     >
       <div className="container">
         <div className="section-heading relative">
-          <h2 className="section-title">Sign up for free today</h2>
+          <h2 className="section-title">Be the First to</h2>
           <p className="section-description mt-5">
-            Celebrate the joy of accomplishment with an app designed to track
-            your progress and motivate your efforts.
+            Join our exclusive Demo for early access to Chat with AI powered
+            resume builder.
           </p>
         </div>
         <div className="flex gap-2 mt-10 justify-center">
-          <a href="https://www.waitforit.me/signup/c5fdedbb">
-            <button className="btn btn-primary">Get for free</button>
+          <a href="/waitlist">
+            <button className="btn btn-primary">Join Waitlist</button>
           </a>
           <button className="btn btn-text gap-1">
-            <span>Learn more</span>
+            <span>Learn More</span>
             <ArrowRight className="h-5 w-5" />
           </button>
         </div>

@@ -22,20 +22,18 @@ export const ProductShowcase = () => {
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center items-center">
-            <div className="tag">Boost your productivity</div>
+            <div className="tag">AI Powered Resume Builder</div>
           </div>
-          <h2 className="section-title mt-5">
-            A more effective way to track progress
-          </h2>
+          <h2 className="section-title mt-5">Chat. Create. Career</h2>
           <p className="section-description mt-5">
-            Effortlessly turn your ideas into a fully functional, response, SaaS
-            website in just minutes with this template.
+            Create a professional resume in minutes with our AI driven chat
+            based resume builder.
           </p>
         </div>
         <div className="relative">
           <Image
             src={productImage}
-            alt="product Image"
+            alt="OhMyResume AI Chat Interface"
             className="mt-10"
             placeholder="blur"
             blurDataURL="data:..."
