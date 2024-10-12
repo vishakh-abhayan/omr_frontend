@@ -29,7 +29,8 @@ export const Hero = () => {
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
             <Image
               src={cogImage.src}
-              alt="Cog image"
+              alt="Create a professional resume in minutes with our AI driven chat
+            based resume builder."
               className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0"
               height={1000}
               width={1000}

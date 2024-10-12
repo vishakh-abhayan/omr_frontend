@@ -1,23 +1,8 @@
-"use client";
-
-import { useRef } from "react";
-import { useScroll, useTransform } from "framer-motion";
 import ArrowRight from "@/assets/arrow-right.svg";
 
 export const CallToAction = () => {
-  const sectionRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-
-  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
-
   return (
-    <section
-      ref={sectionRef}
-      className="bg-gradient-to-b to-white from-[#D2DCFF] py-24 overflow-x-clip"
-    >
+    <section className="bg-gradient-to-b to-white from-[#D2DCFF] py-24 overflow-x-clip">
       <div className="container">
         <div className="section-heading relative">
           <h2 className="section-title">Be the First to</h2>

@@ -1,24 +1,9 @@
-"use client";
-
 import productImage from "@/assets/ProductImage.webp";
 import Image from "next/image";
-import { useScroll, useTransform } from "framer-motion";
-import { useRef } from "react";
 
 export const ProductShowcase = () => {
-  const sectionRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start end", "end start"],
-  });
-
-  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
-
   return (
-    <section
-      ref={sectionRef}
-      className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip"
-    >
+    <section className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-24 overflow-x-clip">
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center items-center">
@@ -33,7 +18,8 @@ export const ProductShowcase = () => {
         <div className="relative">
           <Image
             src={productImage}
-            alt="OhMyResume AI Chat Interface"
+            alt="Create a professional resume in minutes with our AI driven chat
+            based resume builder."
             className="mt-10"
             placeholder="blur"
             blurDataURL="data:..."
