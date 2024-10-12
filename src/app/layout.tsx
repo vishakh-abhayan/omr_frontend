@@ -58,12 +58,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative">
-      <GoogleTagManager gtmId="G-1YKVVQRTQ8" />
+      <GoogleTagManager gtmId="G-8BN3464P7H" />
       <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
         <Analytics />
       </body>
-      <GoogleAnalytics gaId="G-1YKVVQRTQ8" />
+      <GoogleAnalytics gaId="G-8BN3464P7H" />
     </html>
   );
 }
