@@ -2,7 +2,6 @@ import logo from "@/assets/SaaSLogo.webp";
 import SocialX from "@/assets/social-x.svg";
 import SocialInsta from "@/assets/social-insta.svg";
 import SocialLinkedIn from "@/assets/social-linkedin.svg";
-import SocialPin from "@/assets/social-pin.svg";
 import SocialYoutube from "@/assets/social-youtube.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,18 +25,11 @@ export const Footer = () => {
           <SocialX />
           <SocialInsta />
           <SocialLinkedIn />
-          <SocialPin />
           <SocialYoutube />
         </div>
         <p className="mt-6">
-          &copy; 2024 Your Company, Inc. All rights reserved.
+          &copy; 2024 Ohmyresume Inc. All rights reserved.
           <br />
-          <Link
-            className="hover:text-white transition-all"
-            href="https://github.com/MiladJoodi/Light-Saas-Landing-Page"
-          >
-            Make with ❤️ by Joodi
-          </Link>
         </p>
       </div>
     </footer>
