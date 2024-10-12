@@ -41,10 +41,10 @@ const WaitlistPage = () => {
           height={100}
           className="mx-auto mb-6"
         />
-        <h1 className="text-5xl md:text-6xl font-bold tracking-tigher bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text mt-6">
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tigher bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text mt-6">
           Join for Demo
         </h1>
-        <p className="text-xl text-[#010d3e] tracking-tight mt-6 mb-6">
+        <p className="text-lg md:text-xl text-[#010d3e] tracking-tight mt-6 mb-6">
           Cool stuff happening behind the scenes. Get the first look; be the
           early bird
         </p>
