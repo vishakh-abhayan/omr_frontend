@@ -8,6 +8,14 @@ const nextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/blogs",
+        destination: "https://omr-blog.vercel.app/blogs",
+      },
+    ];
+  },
   async headers() {
     return [
       {
