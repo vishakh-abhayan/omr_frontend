@@ -7,3 +7,4 @@ Host: https://www.ohmyresume.com
 
 # Sitemaps
 Sitemap: https://www.ohmyresume.com/sitemap.xml
+Sitemap: undefined/sitemap.xml

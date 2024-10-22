@@ -9,10 +9,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://blog.ohmyresume.com",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 2,
+    },
+    {
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/waitlist`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 2,
+      priority: 3,
     },
   ];
 }
