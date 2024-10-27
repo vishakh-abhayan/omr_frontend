@@ -20,7 +20,7 @@ export const Hero = () => {
                 <a href="/waitlist">Get free Demo</a>
               </button>
               <button className="btn btn-text gap-1">
-                <a href="#pro">Learn more</a>
+                <a href="/about">Learn more</a>
                 <ArrowIcon className="h-5 w-5" />
               </button>
             </div>

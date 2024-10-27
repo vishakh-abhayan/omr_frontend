@@ -9,6 +9,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${process.env.NEXT_PUBLIC_SITE_URL}/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
       url: "https://blog.ohmyresume.com",
       lastModified: new Date(),
       changeFrequency: "weekly",
