@@ -12,13 +12,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: "https://blog.ohmyresume.com",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.7,
     },
     {
       url: `${process.env.NEXT_PUBLIC_SITE_URL}/waitlist`,
