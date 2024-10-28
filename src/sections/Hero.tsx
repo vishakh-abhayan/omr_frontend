@@ -23,7 +23,7 @@ export const Hero = () => {
               </button>
               <button className="btn btn-text gap-1">
                 <a aria-label="About OhMyResume" href="/about">
-                  Learn more
+                  About Us
                 </a>
                 <ArrowIcon className="h-5 w-5" />
               </button>
