@@ -17,10 +17,14 @@ export const Hero = () => {
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <button className="btn btn-primary">
-                <a href="/waitlist">Get free Demo</a>
+                <a aria-label="Join our early access waitlist" href="/waitlist">
+                  Get free Demo
+                </a>
               </button>
               <button className="btn btn-text gap-1">
-                <a href="/about">Learn more</a>
+                <a aria-label="Discover how OhMyResume works" href="/about">
+                  Learn more
+                </a>
                 <ArrowIcon className="h-5 w-5" />
               </button>
             </div>

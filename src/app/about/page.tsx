@@ -2,11 +2,13 @@ import { Header } from "@/sections/Header";
 import { Metadata } from "next";
 import { generateBaseMetadata } from "../../utils/metadata";
 
-export const metadata: Metadata = generateBaseMetadata("About");
+export const metadata: Metadata = generateBaseMetadata(
+  "About - AI-Powered Resume Builder"
+);
 
 const AboutPage = () => {
   return (
-    <section>
+    <section aria-label="About OhMyResume">
       <Header />
       <div className="min-h-screen bg-gradient-to-b from-[#D2DCFF] to-white flex flex-col justify-center items-center px-6 md:px-16 text-center">
         <h1 className="text-3xl md:text-5xl font-bold tracking-tight bg-gradient-to-b from-black to-[#001e80] text-transparent bg-clip-text mt-6">

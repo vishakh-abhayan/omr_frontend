@@ -36,7 +36,9 @@ export const Header = () => {
           Be among the first to experience AI powered resume creation
         </p>
         <div className="inline-flex gap-1 items-center">
-          <a href="/waitlist">Join waitlist for free</a>
+          <a aria-label="Join our early access waitlist" href="/waitlist">
+            Join waitlist for free
+          </a>
           <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
         </div>
       </div>
@@ -60,7 +62,7 @@ export const Header = () => {
               <a href="/about">About</a>
               <a href="#">Features</a>
               <a href="https://blog.ohmyresume.com">blog</a>
-              <a href="/waitlist">
+              <a aria-label="Join our early access waitlist" href="/waitlist">
                 <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
                   join waitlist
                 </button>
