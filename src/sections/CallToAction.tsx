@@ -16,7 +16,7 @@ export const CallToAction = () => {
             <button className="btn btn-primary">Join Waitlist</button>
           </a>
           <button className="btn btn-text gap-1">
-            <a aria-label="Discover how OhMyResume works" href="/about">
+            <a aria-label="About OhMyResume" href="/about">
               Learn more
             </a>
             <ArrowRight className="h-5 w-5" />
