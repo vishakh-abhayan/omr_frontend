@@ -21,13 +21,13 @@ export default function RootLayout({
     <html lang="en" className="relative">
       <head>
         <GoogleTagManager gtmId="G-8BN3464P7H" />
-        <HotjarSnippet HOTJAR_ID="5193152" />
       </head>
       <body className={clsx(dmSans.className, "antialiased bg-[#EAEEFE]")}>
         {children}
         <Analytics />
+        <HotjarSnippet HOTJAR_ID="5193152" />
+        <GoogleAnalytics gaId="G-8BN3464P7H" />
       </body>
-      <GoogleAnalytics gaId="G-8BN3464P7H" />
     </html>
   );
 }
