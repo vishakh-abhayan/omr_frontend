@@ -1,6 +1,7 @@
 import { Header } from "@/sections/Header";
 import { Metadata } from "next";
 import { generateBaseMetadata } from "../../utils/metadata";
+import { Footer } from "@/sections/Footer";
 
 export const metadata: Metadata = generateBaseMetadata(
   "About - AI-Powered Resume Builder"
@@ -46,6 +47,7 @@ const AboutPage = () => {
           successful.
         </p>
       </div>
+      <Footer />
     </section>
   );
 };

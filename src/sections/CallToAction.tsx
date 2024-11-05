@@ -17,7 +17,7 @@ export const CallToAction = () => {
           </a>
           <button className="btn btn-text gap-1">
             <a aria-label="About OhMyResume" href="/about">
-              About Us
+              About
             </a>
             <ArrowRight className="h-5 w-5" />
           </button>

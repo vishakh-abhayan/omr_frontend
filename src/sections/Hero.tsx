@@ -1,5 +1,4 @@
 import ArrowIcon from "@/assets/arrow-right.svg";
-import cogImage from "@/assets/cog.webp";
 import Image from "next/image";
 import productImage from "@/assets/ProductImage.webp";
 
@@ -24,7 +23,7 @@ export const Hero = () => {
               </button>
               <button className="btn btn-text gap-1">
                 <a aria-label="About OhMyResume" href="/about">
-                  About Us
+                  About
                 </a>
                 <ArrowIcon className="h-5 w-5" />
               </button>
@@ -35,15 +34,14 @@ export const Hero = () => {
             <Image
               src={productImage}
               alt="Create a professional resume in minutes with our AI driven chat
-            based resume builder."
+              based resume builder."
               className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0"
-              placeholder="blur"
+              height={1000}
+              width={1000}
               blurDataURL="data:..."
-              width={2505}
-              height={1566}
+              placeholder="blur"
+              priority
               quality={75}
-              priority={false}
-              loading="lazy"
             />
           </div>
         </div>

@@ -19,7 +19,7 @@ export const ProductShowcase = () => {
           <div className="relative w-full aspect-video">
             <iframe
               className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg overflow-hidden"
-              src="https://www.youtube.com/embed/g78BEQ1ADBo?si=RTD1-ZPaZxaC0ptP&autoplay=1&mute=1&loop=1&playlist=g78BEQ1ADBo&controls=0"
+              src="https://www.youtube.com/embed/g78BEQ1ADBo?vq=hd1080&si=RTD1-ZPaZxaC0ptP&autoplay=1&mute=1&loop=1&playlist=g78BEQ1ADBo&controls=0"
               title="Resume Builder Demo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

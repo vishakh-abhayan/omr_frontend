@@ -14,18 +14,23 @@ export const Footer = () => {
           <Image src={logo} height={40} alt="SaaS logo" className="relative" />
         </div>
         <nav className="flex flex-col md:flex-row md:justify-center gap-6 mt-6">
-          <Link href="">About</Link>
+          <Link href="/about">About</Link>
           <Link href="">Features</Link>
-          <Link href="">Customers</Link>
-          <Link href="">Pricing</Link>
-          <Link href="">Help</Link>
-          <Link href="">Careers</Link>
+          <Link href="https://blog.ohmyresume.com">Blog</Link>
         </nav>
         <div className="flex justify-center gap-6 mt-6">
-          <SocialX />
-          <SocialInsta />
-          <SocialLinkedIn />
-          <SocialYoutube />
+          <a href="https://x.com/ohmyresume30969">
+            <SocialX />
+          </a>
+          <a href="https://www.instagram.com/ohmy.resume/">
+            <SocialInsta />
+          </a>
+          <a href="https://www.linkedin.com/company/ohmyresume/">
+            <SocialLinkedIn />
+          </a>
+          <a href="https://www.youtube.com/@ohmyresume">
+            <SocialYoutube />
+          </a>
         </div>
         <p className="mt-6">
           &copy; 2024 Ohmyresume Inc. All rights reserved.
