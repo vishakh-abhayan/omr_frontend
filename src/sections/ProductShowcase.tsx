@@ -1,6 +1,3 @@
-import productImage from "@/assets/ProductImage.webp";
-import Image from "next/image";
-
 export const ProductShowcase = () => {
   return (
     <section className="bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] py-12 md:py-24 overflow-x-clip">

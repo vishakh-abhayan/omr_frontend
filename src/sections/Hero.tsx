@@ -17,7 +17,10 @@ export const Hero = () => {
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <button className="btn btn-primary">
-                <a aria-label="Join our early access waitlist" href="/waitlist">
+                <a
+                  aria-label="Join our early access waitlist"
+                  href="https://demo.ohmyresume.com/"
+                >
                   Get free Demo
                 </a>
               </button>

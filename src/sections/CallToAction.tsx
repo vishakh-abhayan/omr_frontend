@@ -5,15 +5,18 @@ export const CallToAction = () => {
     <section className="bg-gradient-to-b to-white from-[#D2DCFF] py-24 overflow-x-clip">
       <div className="container">
         <div className="section-heading relative">
-          <h2 className="section-title">Be the First to</h2>
+          <h2 className="section-title">Get Started Today</h2>
           <p className="section-description mt-5">
-            Join our exclusive Demo for early access to Chat with AI powered
-            resume builder.
+            Experience our AI-powered resume builder. Chat with AI and craft the
+            perfect resume effortlessly
           </p>
         </div>
         <div className="flex gap-2 mt-10 justify-center">
-          <a aria-label="Join our early access waitlist" href="/waitlist">
-            <button className="btn btn-primary">Join Waitlist</button>
+          <a
+            aria-label="Join our early access waitlist"
+            href="https://demo.ohmyresume.com"
+          >
+            <button className="btn btn-primary">Try Demo</button>
           </a>
           <button className="btn btn-text gap-1">
             <a aria-label="About OhMyResume" href="/about">
