@@ -12,10 +12,7 @@ export const CallToAction = () => {
           </p>
         </div>
         <div className="flex gap-2 mt-10 justify-center">
-          <a
-            aria-label="Join our early access waitlist"
-            href="https://demo.ohmyresume.com"
-          >
+          <a aria-label="Join our early access waitlist" href="/waitlist">
             <button className="btn btn-primary">Try Demo</button>
           </a>
           <button className="btn btn-text gap-1">
