@@ -1,4 +1,3 @@
-// app/waitlist/waitlist-form.tsx
 "use client";
 
 import Image from "next/image";
@@ -13,6 +12,7 @@ import { submitWaitlist } from "../app/actions";
 const WaitlistForm = () => {
   const [email, setEmail] = useState<string>("");
   const [status, setStatus] = useState<string>("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -22,6 +22,7 @@ const WaitlistForm = () => {
       if (result.success) {
         setStatus("Thank you for joining the waitlist!");
         setEmail("");
+        setIsSubmitted(true);
       } else {
         setStatus(`An error occurred: ${result.message}`);
         console.error("Submission error:", result.message);
@@ -49,21 +50,29 @@ const WaitlistForm = () => {
           Cool stuff happening behind the scenes. Get the first look; be the
           early bird
         </p>
-        <form onSubmit={handleSubmit} className="mb-6">
-          <div className="flex gap-4 px-4">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Email"
-              required
-            />
-            <button type="submit" className="btn btn-primary text-xl">
-              Join
-            </button>
+
+        {!isSubmitted ? (
+          <form onSubmit={handleSubmit} className="mb-6">
+            <div className="flex gap-4 px-4">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Email"
+                required
+              />
+              <button type="submit" className="btn btn-primary text-xl">
+                Join
+              </button>
+            </div>
+          </form>
+        ) : (
+          <div className="mb-6 p-6 border-2 border-dashed border-white bg-white/50 rounded-lg shadow-sm backdrop-blur-sm">
+            <p className="text-lg text-gray-800">{status}</p>
           </div>
-        </form>
+        )}
+
         <div className="flex items-center justify-center">
           <div className="flex -space-x-1">
             <Image
@@ -103,7 +112,10 @@ const WaitlistForm = () => {
             <span className="text-sm text-gray-600">+1201 other onboard</span>
           </div>
         </div>
-        {status && <p className="mt-4 text-sm text-gray-600">{status}</p>}
+
+        {!isSubmitted && status && (
+          <p className="mt-4 text-sm text-gray-600">{status}</p>
+        )}
       </div>
     </div>
   );

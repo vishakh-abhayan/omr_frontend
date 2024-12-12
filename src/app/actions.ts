@@ -1,7 +1,5 @@
 "use server";
 
-import { headers } from "next/headers";
-
 type SubmitResult = {
   success: boolean;
   message: string;
@@ -9,47 +7,33 @@ type SubmitResult = {
 };
 
 export async function submitWaitlist(email: string): Promise<SubmitResult> {
-  const apiKey = process.env.AIRTABLE_API_KEY;
-  const baseId = process.env.AIRTABLE_BASE_ID;
-  const tableName = process.env.AIRTABLE_TABLE_NAME;
+  const scriptUrl = process.env.GOOGLE_SCRIPT_URL;
 
-  if (!apiKey || !baseId || !tableName) {
-    console.error("Missing Airtable configuration");
+  if (!scriptUrl) {
+    console.error("Missing Google Script URL configuration");
     return { success: false, message: "Server configuration error" };
   }
 
   try {
-    const response = await fetch(
-      `https://api.airtable.com/v0/${baseId}/${tableName}`,
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          records: [
-            {
-              fields: {
-                Email: email,
-              },
-            },
-          ],
-        }),
-      }
-    );
+    const response = await fetch(scriptUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+      }),
+    });
 
     if (!response.ok) {
-      const errorData = await response.json();
-      console.error("Airtable API error:", errorData);
-      throw new Error(`Airtable API error: ${JSON.stringify(errorData)}`);
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
 
     const data = await response.json();
     return {
-      success: true,
-      message: "Email added to waitlist successfully",
-      recordId: data.records[0].id,
+      success: data.success,
+      message: data.message,
+      recordId: data.recordId,
     };
   } catch (error) {
     console.error("Error adding email to waitlist:", error);
