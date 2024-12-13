@@ -14,9 +14,8 @@ export const Footer = () => {
           <Image src={logo} height={40} alt="SaaS logo" className="relative" />
         </div>
         <nav className="flex flex-col md:flex-row md:justify-center gap-6 mt-6">
-          <Link href="/about">About</Link>
-          <Link href="">Features</Link>
-          <Link href="https://blog.ohmyresume.com">Blog</Link>
+          <Link href="/privic">Privacy Policy</Link>
+          <Link href="">Terms and Condition</Link>
         </nav>
         <div className="flex justify-center gap-6 mt-6">
           <a href="https://x.com/ohmyresume30969">
