@@ -16,10 +16,10 @@ export default function TermsAndConditions() {
               1. Agreement to Terms
             </h2>
             <p className="text-gray-600">
-              By accessing and using Resume Builder Pro's services, you agree to
-              be bound by these Terms and Conditions and our Privacy Policy. If
-              you disagree with any part of these terms, you may not access our
-              service.
+              By accessing and using Resume Builder Pro&apos;s services, you
+              agree to be bound by these Terms and Conditions and our Privacy
+              Policy. If you disagree with any part of these terms, you may not
+              access our service.
             </p>
           </section>
 
@@ -97,14 +97,16 @@ export default function TermsAndConditions() {
                   7.1. AI Feature Acknowledgement
                 </h3>
                 <p className="text-gray-600">
-                  Our AI features are powered by OpenAI's language models. By
-                  using these features, you acknowledge:
+                  Our AI features are powered by OpenAI&apos;s language models.
+                  By using these features, you acknowledge:
                 </p>
                 <ul className="mt-2 space-y-1 text-gray-600 list-disc list-inside">
-                  <li>Your inputs will be processed by OpenAI's services</li>
+                  <li>
+                    Your inputs will be processed by OpenAI&apos;s services
+                  </li>
                   <li>Generated content may vary in quality and accuracy</li>
                   <li>We cannot guarantee specific AI-generated outcomes</li>
-                  <li>Usage is subject to OpenAI's usage policies</li>
+                  <li>Usage is subject to OpenAI&apos;s usage policies</li>
                 </ul>
               </div>
               <div>
@@ -136,7 +138,8 @@ export default function TermsAndConditions() {
                   <li>You retain rights to your input content</li>
                   <li>You receive a license to use AI-generated content</li>
                   <li>
-                    Generated content may be similar to other users' results
+                    Generated content may be similar to other user&apos;s
+                    results
                   </li>
                   <li>We may use anonymized inputs to improve our services</li>
                 </ul>
@@ -175,10 +178,8 @@ export default function TermsAndConditions() {
               contact us at:
             </p>
             <div className="mt-4 p-4 bg-gray-50 rounded-lg">
-              <p className="text-gray-600">
-                Email: support@resumebuilderpro.com
-              </p>
-              <p className="text-gray-600">Address: [Your Company Address]</p>
+              <p className="text-gray-600">Email: info@ohmyresume.com</p>
+              <p className="text-gray-600">Address: Kochi, Kerala, India</p>
             </div>
           </section>
         </div>

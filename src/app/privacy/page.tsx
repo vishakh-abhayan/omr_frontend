@@ -16,9 +16,8 @@ export default function PrivacyPolicy() {
               1. Introduction
             </h2>
             <p className="text-gray-600">
-              This Privacy Policy explains how Resume Builder Pro collects,
-              uses, and protects your personal information when you use our
-              services.
+              This Privacy Policy explains how Oh My Resume collects, uses, and
+              protects your personal information when you use our services.
             </p>
           </section>
 
@@ -111,9 +110,11 @@ export default function PrivacyPolicy() {
                   6.1. OpenAI Integration
                 </h3>
                 <ul className="space-y-1 text-gray-600 list-disc list-inside">
-                  <li>We use OpenAI's services to power our AI features</li>
                   <li>
-                    Your inputs are processed according to OpenAI's privacy
+                    We use OpenAI&apos;s services to power our AI features
+                  </li>
+                  <li>
+                    Your inputs are processed according to OpenAI&apos;s privacy
                     standards
                   </li>
                   <li>
@@ -185,7 +186,7 @@ export default function PrivacyPolicy() {
 
           <section className="mb-12">
             <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              10. Children's Privacy
+              10. Children&apos;s Privacy
             </h2>
             <p className="text-gray-600">
               Our Service does not address anyone under the age of 13. We do not
@@ -245,7 +246,7 @@ export default function PrivacyPolicy() {
             <p className="text-gray-600">
               We may update this Privacy Policy from time to time. We will
               notify you of any changes by posting the new Privacy Policy on
-              this page and updating the "Last updated" date.
+              this page and updating the &quot;Last updated&quot; date.
             </p>
           </section>
 
@@ -258,10 +259,8 @@ export default function PrivacyPolicy() {
               contact us at:
             </p>
             <div className="mt-4 p-4 bg-gray-50 rounded-lg">
-              <p className="text-gray-600">
-                Email: privacy@resumebuilderpro.com
-              </p>
-              <p className="text-gray-600">Address: [Your Company Address]</p>
+              <p className="text-gray-600">Email: privacy@ohmyresume.com</p>
+              <p className="text-gray-600">Address: Kochi, Kerala, India</p>
             </div>
           </section>
         </div>
