@@ -258,10 +258,6 @@ export default function PrivacyPolicy() {
               If you have any questions about this Privacy Policy, please
               contact us at:
             </p>
-            <div className="mt-4 p-4 bg-gray-50 rounded-lg">
-              <p className="text-gray-600">Email: privacy@ohmyresume.com</p>
-              <p className="text-gray-600">Address: Kochi, Kerala, India</p>
-            </div>
           </section>
         </div>
 
