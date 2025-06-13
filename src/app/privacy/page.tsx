@@ -258,6 +258,7 @@ export default function PrivacyPolicy() {
               If you have any questions about this Privacy Policy, please
               contact us at:
             </p>
+             <p className="text-gray-600">Email: info@ohmyresume.com</p>
           </section>
         </div>
 
