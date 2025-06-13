@@ -179,7 +179,7 @@ export default function TermsAndConditions() {
             </p>
             <div className="mt-4 p-4 bg-gray-50 rounded-lg">
               <p className="text-gray-600">Email: info@ohmyresume.com</p>
-              <p className="text-gray-600">Address: Kochi, Kerala, India</p>
+
             </div>
           </section>
         </div>
